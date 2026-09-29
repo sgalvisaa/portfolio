@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Stephanie Galvis | Data Analyst</title>
+  <meta name="description" content="Stephanie Galvis: data analyst with an MS in Bioinformatics and four years of regulated data-quality experience. Python, R, statistics, and clear reporting.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">Stephanie Galvis</a>
+      <nav aria-label="Sections">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="wrap">
+        <p class="eyebrow">Data Analyst &middot; MS Bioinformatics &middot; Miami, FL (open to remote)</p>
+        <h1>I make sure data is right, then turn it into answers people can use.</h1>
+        <p class="lead">Four years validating and reconciling data in a regulated lab, plus a Master's in Bioinformatics (4.0 GPA) with hands-on statistical analysis in Python and R.</p>
+        <div class="cta">
+          <a class="btn primary" href="#projects">View projects</a>
+          <a class="btn" href="mailto:galvistephanie@gmail.com">Email me</a>
+          <a class="btn" href="https://www.linkedin.com/in/stephanie-galvis/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="wrap narrow">
+        <h2>About</h2>
+        <p>I'm a data analyst who started at the bench. At Beta Analytic, a radiocarbon dating lab, I validated high-volume sample data before it reached clients, reconciled records across our systems, and traced problems to their root cause under strict GLP and SOP standards. That work made me the person people came to when accuracy mattered.</p>
+        <p>In my Master's in Bioinformatics at Brandeis University, I applied that same care to statistics and code: regression, cross-validation, survival analysis, and reproducible pipelines on real biomedical datasets. I'm bilingual in English and Spanish, and I'm most excited about work in healthcare, life sciences, and clinical research.</p>
+      </div>
+    </section>
+
+    <section id="experience" class="section alt">
+      <div class="wrap narrow">
+        <h2>Experience</h2>
+        <ol class="timeline">
+          <li class="entry">
+            <div class="entry-head">
+              <h3>Data Operations Analyst</h3>
+              <span class="when">Aug 2022 &ndash; Jun 2026</span>
+            </div>
+            <p class="org">Beta Analytic &middot; Miami, FL</p>
+            <ul>
+              <li>Reviewed and validated high-volume sample data across LIMS and Salesforce before delivery to clients, identifying discrepancies and reconciling data issues under regulated GLP and SOP standards.</li>
+              <li>Analyzed quality data in Excel to flag anomalies and out-of-range values, and performed root-cause analysis to separate operator error from instrument performance.</li>
+              <li>Identified the cause of a months-long drift in reference standards (a contaminated cleaning step) and flagged it to my supervisor; once corrected, standards returned to the expected range.</li>
+              <li>Validated records during the lab's transition from paper-based records to LIMS and Salesforce, and supported data-quality audits and procedure corrections.</li>
+            </ul>
+          </li>
+          <li class="entry">
+            <div class="entry-head">
+              <h3>Teller II</h3>
+              <span class="when">Jul 2020 &ndash; Aug 2022</span>
+            </div>
+            <p class="org">TD Bank &middot; Miami, FL</p>
+            <ul>
+              <li>Processed and reconciled high-volume transaction data with strict accuracy in a federally regulated environment, resolving customer issues and escalating discrepancies.</li>
+            </ul>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="wrap">
+        <h2>Projects</h2>
+        <p class="section-lead">Graduate and independent work. Filter by method or tool.</p>
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="chip active" data-filter="all" aria-pressed="true">All</button>
+          <button class="chip" data-filter="statistics" aria-pressed="false">Statistics</button>
+          <button class="chip" data-filter="genomics" aria-pressed="false">Genomics</button>
+          <button class="chip" data-filter="r" aria-pressed="false">R</button>
+          <button class="chip" data-filter="python" aria-pressed="false">Python</button>
+          <button class="chip" data-filter="visualization" aria-pressed="false">Visualization</button>
+        </div>
+        <div class="grid" id="project-grid">
+          <article class="card" data-tags="statistics r">
+            <p class="card-meta">R &middot; Graduate coursework, 2025</p>
+            <h3>Survival Analysis of Time-to-Event Data</h3>
+            <p>Estimated Kaplan-Meier survival curves by group and fit a Cox proportional hazards model to estimate hazard ratios, then interpreted the log-rank test, confidence intervals, and concordance index.</p>
+            <p class="tags">Kaplan-Meier &middot; Cox PH &middot; log-rank test &middot; <code>survival</code></p>
+          </article>
+          <article class="card" data-tags="statistics genomics r">
+            <p class="card-meta">R &middot; Brandeis University, 2024&ndash;2025</p>
+            <h3>Logistic Regression and LOOCV on RNA-seq Data</h3>
+            <p>Ran genome-wide logistic regression on a pancreatic adenocarcinoma RNA-seq dataset (GEO: GSE253260) to find genes associated with patient sex, then used leave-one-out cross-validation on raw, normalized, and perturbed counts to test how robust the associations were.</p>
+            <p class="tags">Logistic regression &middot; LOOCV &middot; robustness checks</p>
+          </article>
+          <article class="card" data-tags="genomics python">
+            <p class="card-meta">Command line &middot; Python &middot; Brandeis University, 2024</p>
+            <h3>NGS Pipeline: Tumor Gene Expression</h3>
+            <p>Built an end-to-end pipeline on paired-end FASTQ data: read quality assessment, alignment to human chromosome 17 with BWA, BAM processing with SAMtools, peak calling with MACS2, and annotation with bedtools, recovering BRCA1, TP53, and WRAP53. Results were validated in IGV and documented in a reproducible README.</p>
+            <p class="tags">BWA &middot; SAMtools &middot; MACS2 &middot; bedtools &middot; IGV</p>
+          </article>
+          <article class="card" data-tags="python">
+            <p class="card-meta">Python &middot; Brandeis University, 2026</p>
+            <h3>Computational Drug Repositioning for Glioblastoma</h3>
+            <p>Cleaned, standardized, and integrated multi-file compound and annotation data for about 7,540 Broad Repurposing Hub compounds, then used molecular descriptors, Bemis-Murcko scaffold clustering, Tanimoto similarity, and AutoDock Vina docking against IDH1 to identify larotrectinib as the top candidate (&minus;8.527 kcal/mol).</p>
+            <p class="tags">pandas &middot; RDKit &middot; AutoDock Vina</p>
+          </article>
+          <article class="card" data-tags="genomics r visualization">
+            <p class="card-meta">R &middot; Brandeis University, 2025</p>
+            <h3>Gene Co-expression Network Analysis</h3>
+            <p>Built weighted gene co-expression networks (WGCNA) from RNA-seq expression data to identify co-expressed gene modules and hub genes, and visualized the network in Cytoscape.</p>
+            <p class="tags">WGCNA &middot; Cytoscape</p>
+          </article>
+          <article class="card" data-tags="visualization">
+            <p class="card-meta">Tableau Public &middot; 2026</p>
+            <h3>Interactive Tableau Dashboards</h3>
+            <p>Built and published interactive dashboards, including a U.S. Postsecondary Institutions Overview from federal IPEDS data, plus dashboards on sports and video-game sales datasets.</p>
+            <p class="tags">Tableau &middot; IPEDS</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section alt">
+      <div class="wrap">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="skill-group">
+            <h3>Programming</h3>
+            <p>Python (pandas, NumPy, SciPy, scikit-learn, matplotlib, seaborn), R (tidyverse, ggplot2, survival), SQL (queries, joins, filtering), Bash/Unix</p>
+          </div>
+          <div class="skill-group">
+            <h3>Statistics</h3>
+            <p>Regression (linear, logistic), hypothesis testing, non-parametric tests, survival analysis (Kaplan-Meier, Cox), cross-validation (k-fold, LOOCV)</p>
+          </div>
+          <div class="skill-group">
+            <h3>Data quality</h3>
+            <p>Validation, reconciliation across systems, discrepancy and root-cause analysis, documentation under GLP/SOP</p>
+          </div>
+          <div class="skill-group">
+            <h3>Tools</h3>
+            <p>Excel (XLOOKUP, PivotTables, COUNTIFS), Tableau, Salesforce, LIMS, Jupyter, RStudio, VS Code, Git/GitHub, Claude Code</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="section">
+      <div class="wrap narrow">
+        <h2>Education</h2>
+        <div class="edu">
+          <div><h3>MS, Bioinformatics</h3><p>Brandeis University &middot; May 2026 &middot; GPA 4.0</p></div>
+          <div><h3>BS, Biological Sciences, Minor in Chemistry</h3><p>Florida International University &middot; Aug 2022 &middot; GPA 4.0</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section alt">
+      <div class="wrap narrow center">
+        <h2>Contact</h2>
+        <p>Open to remote Data Analyst, Statistical Analyst, and Data Quality roles. English and Spanish.</p>
+        <div class="cta center">
+          <a class="btn primary" href="mailto:galvistephanie@gmail.com">galvistephanie@gmail.com</a>
+          <a class="btn" href="https://www.linkedin.com/in/stephanie-galvis/" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="wrap">
+      <p>&copy; 2026 Stephanie Galvis. Built with Claude Code using a context, spec, build, validate, ship process.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
