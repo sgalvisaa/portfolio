@@ -117,9 +117,10 @@
           </article>
           <article class="card" data-tags="python">
             <p class="card-meta">Python &middot; Brandeis University, 2026</p>
-            <h3>Computational Drug Repositioning for Glioblastoma</h3>
-            <p>Cleaned, standardized, and integrated multi-file compound and annotation data for about 7,540 Broad Repurposing Hub compounds, then used molecular descriptors, Bemis-Murcko scaffold clustering, Tanimoto similarity, and AutoDock Vina docking against IDH1 to identify larotrectinib as the top candidate (&minus;8.527 kcal/mol).</p>
-            <p class="tags">pandas &middot; RDKit &middot; AutoDock Vina</p>
+            <h3>Drug Repositioning for IDH1-Mutant Glioma</h3>
+            <p>Cleaned and integrated multi-file data for about 7,540 Broad Repurposing Hub drugs, then narrowed 2,712 approved drugs to 10 candidates with RDKit descriptors, drug-likeness and brain-penetration filters, and Tanimoto similarity to ivosidenib. Docked them into the IDH1 R132H inhibitor pocket with AutoDock Vina, validated by redocking ivosidenib (1.7 &Aring;) and compared to positive controls and 40 random drugs. Larotrectinib (&minus;8.7 kcal/mol) and apalutamide (&minus;8.5) beat 38 of 40 random drugs: a hypothesis for an enzyme assay, not proof of binding.</p>
+            <p class="tags">pandas &middot; RDKit &middot; AutoDock Vina &middot; validation</p>
+            <p class="card-link"><a href="https://github.com/sgalvisaa/drug-repositioning-idh1" target="_blank" rel="noopener">View code &rarr;</a></p>
           </article>
           <article class="card" data-tags="genomics r visualization">
             <p class="card-meta">R &middot; Brandeis University, 2025</p>
