@@ -95,6 +95,13 @@
           <button class="chip" data-filter="visualization" aria-pressed="false">Visualization</button>
         </div>
         <div class="grid" id="project-grid">
+          <article class="card" data-tags="statistics genomics r">
+            <p class="card-meta">R &middot; Brandeis University and Independent, 2025&ndash;2026</p>
+            <h3>Breast Cancer Tumor vs Normal Classifier (TCGA)</h3>
+            <p>Built SVM, random forest, and logistic regression models on TCGA breast cancer RNA-seq. When I revisited my course project, I found 65% of the normal samples came from one hospital, so I redesigned it with 113 matched tumor-normal pairs, patient-level splits, and gene selection inside training only (nested CV 99.6%, shuffled labels at chance). The final model detected 98.9% of 982 tumors it had never seen from 39 hospitals, just as well at hospitals with no normal samples, and 8 of its 11 misses were the Normal-like subtype.</p>
+            <p class="tags">SVM &middot; nested CV &middot; leakage checks &middot; external validation</p>
+            <p class="card-link"><a href="https://github.com/sgalvisaa/tcga-brca-classifier" target="_blank" rel="noopener">View code &rarr;</a></p>
+          </article>
           <article class="card" data-tags="statistics r">
             <p class="card-meta">R &middot; Graduate coursework, 2025&ndash;2026</p>
             <h3>Survival Analysis: Heart Transplant Patients by Age</h3>
