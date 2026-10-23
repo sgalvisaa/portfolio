@@ -16,3 +16,17 @@ chips.forEach((chip) => {
     });
   });
 });
+
+// Email buttons: still open the mail app, and also copy the address so the
+// click does something for visitors without a default mail app.
+document.querySelectorAll('.email-link').forEach((link) => {
+  const original = link.textContent;
+  const address = link.getAttribute('href').replace('mailto:', '');
+  link.addEventListener('click', () => {
+    if (!navigator.clipboard) return;
+    navigator.clipboard.writeText(address).then(() => {
+      link.textContent = `Copied: ${address}`;
+      setTimeout(() => { link.textContent = original; }, 2500);
+    });
+  });
+});
